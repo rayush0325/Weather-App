@@ -3,50 +3,114 @@ body{
     width: 100vw;
     display: grid;
     place-content: center;
+    background-color: bisque;
 }
 .box{
     display: flex;
     flex-direction: column;
-    border: solid 1px black;
-    padding: 5px;
+    align-items: center;
+    /* border: solid 1px black; */
+    padding: 1em;
+    height: 18em;
+    width : 15em;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 1.5rem;
 }
 .search{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    width: 15em;
+    height: 1.5em;
+    
 }
-.search .city{
+.search .location{
     /* width: 100px; */
-    width: 100%;
-    height: 30px;
-    margin: 5px;
-    border: solid 1px black;
+    width: 20em;
+    height: 100%;
+    /* margin: 5px; */
+    /* border: solid 1px black; */
+    border-radius: 2em;
+    padding-left: 1em;
+    background-color: #00ffff45  ;
+    border: none;
 }
-.search .btn{
-    height: 30px;
+.search .location::placeholder{
+    content: "enter city or country";
+    color: rgb(0, 148, 254);
+}
+.search .searchBtn{
+    height: 100%;
+}
+.weather{
+    width: 100%;
 }
 .weather, .weather .condition{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 1rem;
 }
-.weather .icon{
-    width: 100px;
+.weather img{
+    width: 8rem;
 }
 
 .weather .condition{
-    gap: 5px;
+    gap: 0.1em;
+}
+.weather .condition .temp{
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+}
+.weather .condition .temp .degree{
+    font-size: 0.5em;
+    color: red;
+    
+}
+.weather .condition .description{
+    font-size: 1.5em;
 }
 .weather .details{
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 1.5em;
+    width: 100%;
+    margin-top: 1em;
 }
-.weather .detail{
+.weather .details .parameter{
     display: flex;
+    gap: 0.5em;
+}
+.weather .details .parameter img{
+    width: 2em;
+}
+.weather .details .parameter .name{
+    color: gray;
+}
 
+.notWeather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    gap: 2em;
+    height: 15em;
+    width: 15em;
 }
-.weather .detail .icon{
-    width: 40px;
+.notWeather .message{
+    text-align: left;
 }
+.notWeather img{
+    width: 10em;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+
