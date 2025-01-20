@@ -11,7 +11,7 @@ body{
     align-items: center;
     /* border: solid 1px black; */
     padding: 1em;
-    height: 18em;
+    height: 21em;
     width : 15em;
     gap: 1rem;
     background-color: white;
@@ -24,7 +24,7 @@ body{
     align-items: center;
     gap: 1rem;
     width: 15em;
-    height: 1.5em;
+    height: 1.7em;
     
 }
 .search .location{
@@ -33,7 +33,7 @@ body{
     height: 100%;
     /* margin: 5px; */
     /* border: solid 1px black; */
-    border-radius: 2em;
+    border-radius: 1em;
     padding-left: 1em;
     background-color: #00ffff45  ;
     border: none;
@@ -41,6 +41,7 @@ body{
 .search .location::placeholder{
     content: "enter city or country";
     color: rgb(0, 148, 254);
+    font-size: 1.3em;
 }
 .search .searchBtn{
     height: 100%;
@@ -55,7 +56,7 @@ body{
     gap: 1rem;
 }
 .weather img{
-    width: 8rem;
+    width: 8em;
 }
 
 .weather .condition{
@@ -66,11 +67,7 @@ body{
     display: flex;
     align-items: center;
 }
-.weather .condition .temp .degree{
-    font-size: 0.5em;
-    color: red;
-    
-}
+
 .weather .condition .description{
     font-size: 1.5em;
 }
@@ -100,9 +97,7 @@ body{
     gap: 2em;
     height: 15em;
     width: 15em;
-}
-.notWeather .message{
-    text-align: left;
+    color: gray;
 }
 .notWeather img{
     width: 10em;

@@ -163,7 +163,7 @@ function showError() {
     div.appendChild(message);
 
     const img = document.createElement("img");
-    img.setAttribute("src", "./assets/404.png");
+    img.setAttribute("src", "./assets/not-found.png");
     div.appendChild(img);
 }
 function showHomePage() {
